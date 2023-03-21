@@ -1,0 +1,35 @@
+<!-- Form -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Form</title>
+    </head>
+    <body>
+
+        <!-- the name attribute will help later on with the backend logic for value identification-->
+        <form>
+            <input type="text" placeholder="Full Name" name="name">
+            <input type="password" placeholder="Password" name="password">
+
+            <div>
+                Favorite Color?
+                <input type="radio" value="red" name="color"> red
+                <input type="radio" value="blue" name="color"> blue
+                <input type="radio" value="green" name="color"> Green
+                <input type="radio" value="yellow" name="color"> Yellow
+            </div>
+
+            <div>
+                <input list="provinces" placeholder="Province" name="Province">
+                <datalist id="provinces">
+                    <option value="KPK"></option>
+                    <option value="Punjab"></option>
+                    <option value="Sindh"></option>
+                    <option value="Gilgit Baltistan"></option>
+                    <option value="AJK"></option>
+                </datalist>
+            </div>
+            <input type="submit">
+        </form>
+    </body>
+</html>

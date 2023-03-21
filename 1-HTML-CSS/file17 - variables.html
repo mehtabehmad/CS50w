@@ -1,0 +1,39 @@
+<!-- CSS variables using SASS language (an extension to the CSS)-->
+<!-- Browswers by default don't understand SASS, therefore we have to 
+    compile our sass file into css file and link that to our html -->
+
+    <!-- Basic Structure of HTML Page -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta content="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="file17variables.css">
+        <title>Variables via Sass</title>
+    </head>
+    <body>
+        <ul>
+            <li>Unordered List Item 1</li>
+            <li>Unordered List Item 2</li>
+            <li>Unordered List Item 3</li>
+        </ul>
+
+        <ol>
+            <li>Ordered List Item 1</li>
+            <li>Ordered List Item 2</li>
+            <li>Ordered List Item 3</li>
+        </ol>
+
+        <!-- Important link to understand how to compile sass into css -->
+        <!-- https://medium.com/@codingcarter/how-to-compile-scss-code-in-visual-studio-code-c8406fe54a18 -->
+        
+        <!-- Terminal Base compilation code -->
+        <!--
+            sass variables.scss:variables.css
+
+            for live watching and compilation
+            sass --watch variables.scss:variables.css (it will monitor live changes and will recompile)
+            press ctrl + c to stop live compilation
+        -->
+
+    </body>
+</html>

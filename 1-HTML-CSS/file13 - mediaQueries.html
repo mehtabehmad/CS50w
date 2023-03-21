@@ -1,0 +1,49 @@
+<!-- @media queries to apply any styling depending upon media size, resolution, screen type, etc -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Media Queries</title>
+        <style>
+
+            body {
+                height: 600px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            @media (min-width: 600px) {
+                div {
+                    width: 200px;
+                    height: 200px;
+                    font-size: 24px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 0%;
+                    border: 0px solid black;
+                    background-color: crimson;
+                }
+            }
+
+            @media (max-width: 599px) {
+                div {
+                    width: 200px;
+                    height: 200px;
+                    font-size: 24px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    border: 0px solid black;
+                    background-color: springgreen;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            Hello, World!
+        </div>
+    </body>
+</html>

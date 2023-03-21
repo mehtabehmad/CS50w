@@ -1,0 +1,94 @@
+<!-- CSS selectors, including id, class, etc -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Selectors</title>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #first {
+                color:crimson;
+            }
+
+            h1.headings {
+                color: green;
+            }
+
+            /*
+                Here if I use "li" then it will select all
+                if I use "ul li" then it will select the all the sublist and subsublist
+                but if I use "ul li" it will select only all the sublist
+
+                so child selector is for immediate elements while descendent is for generally all the items within
+            */
+            ul > li {
+                color: blue;
+            }
+
+            /* attribute selector */
+            a[href="https://facebook.com"] {
+                color: red;
+            }
+
+            /* pseudoclass selector */
+            button {
+                border: 0px solid black;
+                font-size: 24px;
+                padding: 10px;
+                border-radius: 4px;
+                background-color: orangered;
+                margin-top: 20px;
+                color: white;
+            }
+
+            button:hover {
+                background-color: springgreen;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+
+        <!-- ID is used when selecting one unqiue element -->
+        <!-- Class is used when non-unqiue multiple elements -->
+        <h1 id="first">Heading 1 - reference by unique id.</h1>
+        <h1 class="headings">Heading 2 - referenced by class.</h1>
+        <h1 class="headings">Heading 2 - referenced by class.</h1>
+
+        <!-- More CSS selectors -->
+        <!--
+            a, b ---- multiple selector
+            a b  ---- decendent selector
+            a > b ---- child selector
+            a + b ---- adjacent multiple selector
+            [a=b] ---- attribute selector
+            a:b ---- pseudoclass selector
+            a::b ---- pseudoelement selector
+        -->
+
+        <!-- decendent and child selector example -->
+        <ol>
+            <li>list item one</li>
+            <li>list item two</li>
+            <ul>
+                <li>sublist item one</li>
+                <li>sublist item two</li>
+                <ol>
+                    <li>subsublist item one</li>
+                    <li>subsublist item two</li>
+                </ol>
+            </ul>
+            <li>list item three</li>
+        </ol>
+
+        <!-- attribute selector example -->
+        <a href="https://google.com">Google</a>
+        <a href="https://facebook.com">Facebook</a>
+        <a href="https://amazon.com">Amazon</a>
+        
+        <div>
+            <button>Click Me</button>
+        </div>
+    </body>
+</html>
